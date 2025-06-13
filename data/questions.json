@@ -1,0 +1,366 @@
+{
+  "categories": [
+    {
+      "id": "diagnostic",
+      "name": "AI Diagnostic Excellence",
+      "icon": "🏥",
+      "description": "Test your knowledge of cutting-edge AI diagnostic tools",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "A radiologist at a major hospital needs to analyze 500 chest X-rays for potential COVID-19 pneumonia. Which AI tool can reduce reading time by 95% while maintaining 96% accuracy?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Microsoft Excel with macros", "correct": false},
+            {"id": "b", "text": "Viz.ai's ChestLink AI", "correct": true},
+            {"id": "c", "text": "Basic PACS system", "correct": false},
+            {"id": "d", "text": "Manual review with templates", "correct": false}
+          ],
+          "explanation": "Viz.ai's ChestLink AI can analyze chest X-rays in seconds, flagging critical findings and prioritizing cases. In real deployments, it has reduced reading time from 2.5 hours to just 7.5 minutes for a batch of 500 X-rays!",
+          "impact": "💡 Time saved: 2.4 hours per batch | Accuracy: 96% | ROI: $450K annually per radiologist"
+        },
+        {
+          "id": "q2",
+          "text": "Dr. Chen suspects a patient has a rare genetic disorder. Which AI platform analyzed 100 million patient records to diagnose rare diseases 50% faster than traditional methods?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Google's Med-PaLM 2", "correct": true},
+            {"id": "b", "text": "WebMD symptom checker", "correct": false},
+            {"id": "c", "text": "Standard EMR search", "correct": false},
+            {"id": "d", "text": "PubMed literature review", "correct": false}
+          ],
+          "explanation": "Google's Med-PaLM 2 achieved expert-level performance on medical licensing exams and can analyze vast datasets to identify rare disease patterns that would take humans months to discover.",
+          "impact": "🚀 Diagnostic speed: 50% faster | Rare disease detection: 73% improvement | Lives saved: 1,200+ annually"
+        },
+        {
+          "id": "q3",
+          "text": "Match these AI diagnostic achievements to their impact metrics:",
+          "type": "matching",
+          "pairs": [
+            {"left": "PathAI for cancer detection", "right": "99.5% accuracy in breast cancer diagnosis"},
+            {"left": "Arterys Cardio AI", "right": "10-minute full cardiac MRI analysis (vs 60 min)"},
+            {"left": "IDx-DR for diabetic retinopathy", "right": "First FDA-approved autonomous AI diagnostic"},
+            {"left": "Butterfly iQ ultrasound AI", "right": "$2,000 pocket ultrasound replacing $100K machines"}
+          ],
+          "explanation": "These AI tools are revolutionizing diagnostics with unprecedented accuracy and accessibility.",
+          "impact": "🎯 Combined impact: $2.1B in healthcare savings, 3M+ patients diagnosed earlier"
+        }
+      ]
+    },
+    {
+      "id": "administrative",
+      "name": "Administrative AI Revolution",
+      "icon": "📝",
+      "description": "Discover how AI is eliminating documentation burden",
+      "questions": [
+        {
+          "id": "q4",
+          "text": "Dr. Smith spends 2 hours daily on clinical documentation. Which ambient AI scribe achieved 98.8% accuracy in KLAS Research and is used by 7,260+ physicians?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Dragon Medical dictation", "correct": false},
+            {"id": "b", "text": "DeepScribe AI", "correct": true},
+            {"id": "c", "text": "Traditional transcription service", "correct": false},
+            {"id": "d", "text": "Voice recorder app", "correct": false}
+          ],
+          "explanation": "DeepScribe's ambient AI listens to patient conversations and automatically generates clinical notes with 98.8% accuracy. It has processed over 2.5 million patient encounters!",
+          "impact": "⏰ Time saved: 2+ hours/day | Physician satisfaction: 94% | Annual value: $150K per physician"
+        },
+        {
+          "id": "q5",
+          "text": "A busy ER physician sees 40 patients per shift. Which combination of AI tools can reduce documentation time by 75% while improving billing accuracy by 23%?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Notepad and billing software", "correct": false},
+            {"id": "b", "text": "Augmedix AI + Intelligent billing integration", "correct": true},
+            {"id": "c", "text": "Voice memos and manual coding", "correct": false},
+            {"id": "d", "text": "Template-based EMR only", "correct": false}
+          ],
+          "explanation": "Augmedix combines real-time AI scribing with intelligent billing code suggestions, capturing more billable procedures while reducing documentation time from 4 hours to 1 hour per shift.",
+          "impact": "💰 Revenue increase: $380K/year per physician | Burnout reduction: 67% | Patient satisfaction: +31%"
+        },
+        {
+          "id": "q6",
+          "text": "True or False: Tali AI can generate SOAP notes just by listening to patient conversations, supports 25+ languages, and integrates with 90% of major EMR systems.",
+          "type": "true-false",
+          "answer": true,
+          "explanation": "Tali AI's advanced natural language processing can understand medical conversations in multiple languages and automatically format them into proper SOAP notes, saving 90 minutes per day on average.",
+          "impact": "🌍 Global reach: 25+ languages | EMR compatibility: 90% | Time to ROI: 2 weeks"
+        }
+      ]
+    },
+    {
+      "id": "clinical-decision",
+      "name": "Clinical Decision Support",
+      "icon": "🧠",
+      "description": "Explore AI tools that enhance clinical decision-making",
+      "questions": [
+        {
+          "id": "q7",
+          "text": "An ICU has 50 patients. Which AI system predicted patient deterioration 6-12 hours earlier than traditional methods, preventing 27% of cardiac arrests?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Basic vital signs monitoring", "correct": false},
+            {"id": "b", "text": "Epic's Deterioration Index AI", "correct": true},
+            {"id": "c", "text": "Nurse rounds every 2 hours", "correct": false},
+            {"id": "d", "text": "Family member observations", "correct": false}
+          ],
+          "explanation": "Epic's Deterioration Index uses machine learning on 200+ variables to predict patient decline hours before visible symptoms, giving care teams crucial time to intervene.",
+          "impact": "🚨 Lives saved: 1 in 4 potential cardiac arrests prevented | Cost savings: $2.3M per 100 beds annually"
+        },
+        {
+          "id": "q8",
+          "text": "Which AI platform analyzed 30 billion clinical data points to recommend personalized cancer treatments, improving 5-year survival rates by 23%?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "IBM Watson for Oncology", "correct": true},
+            {"id": "b", "text": "Google search for treatments", "correct": false},
+            {"id": "c", "text": "Textbook treatment protocols", "correct": false},
+            {"id": "d", "text": "Colleague consultations only", "correct": false}
+          ],
+          "explanation": "IBM Watson for Oncology processes vast amounts of medical literature, clinical trials, and patient data to recommend evidence-based, personalized treatment plans that have significantly improved outcomes.",
+          "impact": "📈 Survival rate improvement: 23% | Treatment plan time: 10 min vs 5 hours | Accuracy: 96%"
+        },
+        {
+          "id": "q9",
+          "text": "Scenario: A rural clinic needs to identify high-risk diabetic patients for preventive care. Which AI approach reduced hospital admissions by 44%?",
+          "type": "scenario",
+          "options": [
+            {"id": "a", "text": "Annual check-ups only", "correct": false},
+            {"id": "b", "text": "Predictive AI risk stratification with automated outreach", "correct": true},
+            {"id": "c", "text": "Patient self-reporting", "correct": false},
+            {"id": "d", "text": "Random screening", "correct": false}
+          ],
+          "explanation": "AI-powered risk stratification analyzes EMR data, lab results, and social determinants to identify high-risk patients before complications arise, enabling proactive intervention.",
+          "impact": "🏥 Hospital admissions: -44% | ER visits: -31% | Cost per patient: -$3,200/year"
+        }
+      ]
+    },
+    {
+      "id": "patient-engagement",
+      "name": "Patient Engagement AI",
+      "icon": "👥",
+      "description": "Learn how AI is transforming patient care and engagement",
+      "questions": [
+        {
+          "id": "q10",
+          "text": "Ada Health's AI symptom checker has completed 35 million+ assessments. What percentage of users were directed to appropriate care levels, avoiding unnecessary ER visits?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "25%", "correct": false},
+            {"id": "b", "text": "50%", "correct": false},
+            {"id": "c", "text": "73%", "correct": true},
+            {"id": "d", "text": "15%", "correct": false}
+          ],
+          "explanation": "Ada Health's AI accurately triages 73% of cases to the right care level, preventing costly ER visits for non-emergencies while ensuring critical cases get immediate attention.",
+          "impact": "💸 ER visits avoided: 2.1M annually | Cost savings: $4.2B | Patient satisfaction: 91%"
+        },
+        {
+          "id": "q11",
+          "text": "Which AI-powered patient engagement platform increased medication adherence by 42% through personalized nudges and achieved a 89% engagement rate?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Email reminders", "correct": false},
+            {"id": "b", "text": "Wellframe's AI care management", "correct": true},
+            {"id": "c", "text": "Paper calendars", "correct": false},
+            {"id": "d", "text": "Family reminders", "correct": false}
+          ],
+          "explanation": "Wellframe uses behavioral AI to deliver personalized interventions at optimal times, dramatically improving medication adherence and health outcomes for chronic disease patients.",
+          "impact": "💊 Adherence improvement: 42% | Readmissions: -26% | ROI: 3.7x in first year"
+        },
+        {
+          "id": "q12",
+          "text": "Match these patient-facing AI innovations to their breakthrough achievements:",
+          "type": "matching",
+          "pairs": [
+            {"left": "Babylon Health AI", "right": "4-minute consultations with 92% accuracy"},
+            {"left": "K Health's AI", "right": "Diagnosed 78% of conditions correctly from symptoms alone"},
+            {"left": "Sensely's Virtual Nurse", "right": "Reduced nurse workload by 64% for routine queries"},
+            {"left": "Buoy Health AI", "right": "50M+ users guided to appropriate care pathways"}
+          ],
+          "explanation": "These AI platforms are making healthcare more accessible while maintaining high quality standards.",
+          "impact": "🌟 Combined reach: 100M+ patients served | Average cost reduction: 67% | Access improvement: 24/7"
+        }
+      ]
+    },
+    {
+      "id": "implementation",
+      "name": "ROI & Implementation Mastery",
+      "icon": "💡",
+      "description": "Master the business case for AI in healthcare",
+      "questions": [
+        {
+          "id": "q13",
+          "text": "Mount Sinai Health System implemented AI across multiple departments. What was their ROI after 18 months?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Break-even", "correct": false},
+            {"id": "b", "text": "2.1x investment", "correct": false},
+            {"id": "c", "text": "5.4x investment", "correct": true},
+            {"id": "d", "text": "Loss of 20%", "correct": false}
+          ],
+          "explanation": "Mount Sinai's comprehensive AI implementation across imaging, clinical decision support, and operations yielded a 5.4x ROI through efficiency gains, better outcomes, and reduced readmissions.",
+          "impact": "📊 Total savings: $72M | Implementation cost: $13.3M | Payback period: 4 months"
+        },
+        {
+          "id": "q14",
+          "text": "What is the #1 factor for successful AI adoption in healthcare according to a 2024 study of 500 hospitals?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Having the most expensive AI tools", "correct": false},
+            {"id": "b", "text": "Physician champions and proper training", "correct": true},
+            {"id": "c", "text": "IT department size", "correct": false},
+            {"id": "d", "text": "Marketing budget", "correct": false}
+          ],
+          "explanation": "Hospitals with physician champions saw 3.2x higher AI adoption rates and 87% sustained usage after 1 year, compared to 23% for technology-first approaches.",
+          "impact": "🏆 Success rate with champions: 87% | Without champions: 23% | Time to adoption: 3 months vs 14 months"
+        },
+        {
+          "id": "q15",
+          "text": "Calculate the annual value: A 200-physician practice implements ambient AI scribing ($199/month/physician), reducing documentation time by 2 hours/day. If physician time is valued at $200/hour, what's the net annual benefit?",
+          "type": "calculation",
+          "options": [
+            {"id": "a", "text": "$15.2 million", "correct": false},
+            {"id": "b", "text": "$19.4 million", "correct": true},
+            {"id": "c", "text": "$8.7 million", "correct": false},
+            {"id": "d", "text": "$4.1 million", "correct": false}
+          ],
+          "explanation": "Savings: 200 physicians × 2 hours/day × $200/hour × 250 days = $20M. Cost: 200 × $199 × 12 = $478,800. Net benefit: $19.52M ≈ $19.4M. That's a 40x ROI!",
+          "impact": "💰 ROI: 40x | Physician retention improvement: 67% | Patient volume increase: 18%"
+        }
+      ]
+    },
+    {
+      "id": "sales-automation",
+      "name": "AI Sales Acceleration",
+      "icon": "🚀",
+      "description": "Discover AI tools that transform your sales process",
+      "questions": [
+        {
+          "id": "q16",
+          "text": "You're manually tracking 200 physician prospects across spreadsheets. Which AI platform increased qualified meetings by 312% through intelligent prospecting automation?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Excel with color coding", "correct": false},
+            {"id": "b", "text": "Salesforce Einstein AI with Outreach.io", "correct": true},
+            {"id": "c", "text": "Sticky notes and calendar reminders", "correct": false},
+            {"id": "d", "text": "LinkedIn Sales Navigator alone", "correct": false}
+          ],
+          "explanation": "Salesforce Einstein AI analyzes buying signals, engagement patterns, and optimal contact timing while Outreach.io automates multi-channel sequences, resulting in 312% more qualified meetings!",
+          "impact": "🎯 Meeting increase: 312% | Time saved: 15 hours/week | Deal velocity: 47% faster"
+        },
+        {
+          "id": "q17",
+          "text": "Your follow-up emails have a 12% response rate. Which AI writing assistant helped medical sales teams achieve 67% email response rates?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Generic email templates", "correct": false},
+            {"id": "b", "text": "Lavender AI + Crystal Knows personality insights", "correct": true},
+            {"id": "c", "text": "BCC'ing yourself for reminders", "correct": false},
+            {"id": "d", "text": "Mass email blasts", "correct": false}
+          ],
+          "explanation": "Lavender AI optimizes email timing, subject lines, and content while Crystal Knows provides personality-based communication insights, transforming cold outreach into warm conversations.",
+          "impact": "📧 Response rate: 12% → 67% | Meetings booked: 5.5x increase | Email writing time: -73%"
+        },
+        {
+          "id": "q18",
+          "text": "True or False: Apollo.io's AI can identify when a hospital gets new funding, track physician job changes, and automatically trigger personalized outreach sequences - all while you sleep.",
+          "type": "true-false",
+          "answer": true,
+          "explanation": "Apollo.io's AI monitors 200+ buying signals including funding rounds, personnel changes, and technology adoptions, then automatically initiates personalized multi-touch campaigns based on these triggers.",
+          "impact": "🔔 Buying signals tracked: 200+ | Response time to triggers: <5 minutes | Pipeline increase: 284%"
+        },
+        {
+          "id": "q19",
+          "text": "You spend 3 hours preparing for each physician meeting. Which AI tool analyzes social media, publications, and hospital data to create meeting briefs in 2 minutes?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Google searches and manual notes", "correct": false},
+            {"id": "b", "text": "Humantic AI with integrated research", "correct": true},
+            {"id": "c", "text": "Asking colleagues for information", "correct": false},
+            {"id": "d", "text": "Generic pitch deck for everyone", "correct": false}
+          ],
+          "explanation": "Humantic AI creates comprehensive personality profiles and talking points by analyzing digital footprints, helping you connect on a deeper level with each physician's specific interests and communication style.",
+          "impact": "⏱️ Prep time: 3 hours → 2 minutes | Meeting success rate: +83% | Relationship quality score: +91%"
+        },
+        {
+          "id": "q20",
+          "text": "Match these AI sales tools to their game-changing capabilities:",
+          "type": "matching",
+          "pairs": [
+            {"left": "Gong.io conversation intelligence", "right": "Identifies why you're losing deals with 94% accuracy"},
+            {"left": "6sense intent data AI", "right": "Predicts which accounts will buy in next 90 days"},
+            {"left": "Drift conversational AI", "right": "Books meetings 24/7, qualifying leads while you sleep"},
+            {"left": "Chorus.ai coaching insights", "right": "Reduces ramp time for new reps by 62%"}
+          ],
+          "explanation": "These AI platforms transform every aspect of the sales process, from prospecting to closing, making top performers out of average reps.",
+          "impact": "💼 Combined impact: 3.2x revenue growth | Sales cycle: -41% | Rep productivity: +247%"
+        },
+        {
+          "id": "q21",
+          "text": "Your CRM has 5,000 contacts but you don't know who to prioritize. Which AI lead scoring tool increased SQL conversion by 189%?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Alphabetical order outreach", "correct": false},
+            {"id": "b", "text": "MadKudu predictive lead scoring", "correct": true},
+            {"id": "c", "text": "Newest leads first", "correct": false},
+            {"id": "d", "text": "Random selection", "correct": false}
+          ],
+          "explanation": "MadKudu uses machine learning to analyze hundreds of signals including technographics, firmographics, and behavioral data to identify leads most likely to convert, focusing your efforts where they matter most.",
+          "impact": "🎪 SQL conversion: +189% | Time wasted on bad leads: -76% | Revenue per rep: +$1.2M annually"
+        }
+      ]
+    }
+  ],
+  "scoringTiers": {
+    "expert": {
+      "min": 90,
+      "title": "AI Healthcare Visionary",
+      "message": "You're in the top 5% of AI knowledge! You understand both the technology and its transformative impact.",
+      "badge": "🏆"
+    },
+    "advanced": {
+      "min": 75,
+      "title": "AI Implementation Leader",
+      "message": "Excellent knowledge! You're ready to lead AI initiatives and guide healthcare transformation.",
+      "badge": "🌟"
+    },
+    "intermediate": {
+      "min": 60,
+      "title": "AI-Aware Professional",
+      "message": "Good foundation! You understand key AI applications but there's room to deepen your expertise.",
+      "badge": "📈"
+    },
+    "beginner": {
+      "min": 40,
+      "title": "AI Explorer",
+      "message": "You're starting your AI journey. Focus on understanding core tools and their impact metrics.",
+      "badge": "🌱"
+    },
+    "novice": {
+      "min": 0,
+      "title": "AI Newcomer",
+      "message": "Time to dive into AI! The healthcare industry is rapidly adopting these tools - don't get left behind.",
+      "badge": "🚀"
+    }
+  },
+  "recommendations": {
+    "tools": [
+      {"name": "DeepScribe", "url": "https://deepscribe.ai", "description": "Start with ambient AI scribing - easiest ROI"},
+      {"name": "Viz.ai", "url": "https://viz.ai", "description": "Explore AI diagnostic tools for radiology"},
+      {"name": "Ada Health", "url": "https://ada.com", "description": "Understand patient engagement AI"},
+      {"name": "Epic Deterioration Index", "url": "https://epic.com", "description": "Learn about predictive analytics"},
+      {"name": "Salesforce Einstein", "url": "https://salesforce.com/products/einstein", "description": "Transform your sales process with AI"},
+      {"name": "Gong.io", "url": "https://gong.io", "description": "Master conversation intelligence"},
+      {"name": "Lavender AI", "url": "https://lavender.ai", "description": "Write emails that get 67% response rates"},
+      {"name": "Apollo.io", "url": "https://apollo.io", "description": "Never miss a buying signal again"}
+    ],
+    "resources": [
+      {"title": "AI in Healthcare Market Report 2024", "type": "report"},
+      {"title": "KLAS Research: AI Performance Rankings", "type": "study"},
+      {"title": "Implementation Playbook: AI Success Stories", "type": "guide"},
+      {"title": "AI Sales Automation Playbook 2024", "type": "guide"},
+      {"title": "Medical Sales AI Transformation Study", "type": "report"}
+    ]
+  }
+}

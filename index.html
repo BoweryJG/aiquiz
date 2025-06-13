@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI in Healthcare Quiz - Test Your Knowledge | RepSpheres</title>
+    <meta name="description" content="Discover how AI is revolutionizing healthcare. Test your knowledge of cutting-edge AI tools that are transforming medical practice.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="screen active">
+            <div class="welcome-content">
+                <div class="brand">
+                    <h1 class="brand-name">RepSpheres</h1>
+                    <p class="brand-tagline">Empowering Medical Sales with AI Knowledge</p>
+                </div>
+                
+                <div class="quiz-intro">
+                    <h2 class="quiz-title">The AI Healthcare Revolution Quiz</h2>
+                    <p class="quiz-subtitle">Are You Ready for the $613 Billion AI Healthcare Market?</p>
+                    
+                    <div class="stats-preview">
+                        <div class="stat-item">
+                            <span class="stat-number">66%</span>
+                            <span class="stat-label">of physicians already use AI</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label">time reduction in diagnostics</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5.4x</span>
+                            <span class="stat-label">average ROI in 18 months</span>
+                        </div>
+                    </div>
+                    
+                    <p class="quiz-description">
+                        Discover mind-blowing AI capabilities that are transforming healthcare RIGHT NOW. 
+                        This quiz will reveal how much untapped potential exists in AI tools your clients could be using today.
+                    </p>
+                    
+                    <button id="start-quiz" class="btn btn-primary btn-large">
+                        <span>Start the Quiz</span>
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L12 6M16 10L12 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    
+                    <div class="quiz-info">
+                        <span>📱 21 questions</span>
+                        <span>⏱️ 15-20 minutes</span>
+                        <span>🎯 Instant results</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category Selection -->
+        <div id="category-screen" class="screen">
+            <div class="category-header">
+                <h2>Choose Your Learning Path</h2>
+                <p>Select a category to explore AI innovations in that area</p>
+            </div>
+            
+            <div id="category-grid" class="category-grid">
+                <!-- Categories will be dynamically loaded -->
+            </div>
+            
+            <div class="progress-overview">
+                <div class="progress-label">Overall Progress</div>
+                <div class="progress-bar">
+                    <div id="overall-progress" class="progress-fill"></div>
+                </div>
+                <div id="progress-text" class="progress-text">0 of 21 questions completed</div>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <div class="quiz-progress">
+                    <div class="progress-label">
+                        <span id="current-category"></span>
+                        <span id="question-counter"></span>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="category-progress" class="progress-fill"></div>
+                    </div>
+                </div>
+                
+                <button id="back-to-categories" class="btn btn-secondary btn-small">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Categories
+                </button>
+            </div>
+            
+            <div id="question-container" class="question-container">
+                <!-- Question content will be dynamically loaded -->
+            </div>
+            
+            <div id="answer-feedback" class="answer-feedback hidden">
+                <div class="feedback-content">
+                    <div class="feedback-icon"></div>
+                    <h3 class="feedback-title"></h3>
+                    <p class="feedback-explanation"></p>
+                    <div class="feedback-impact"></div>
+                </div>
+            </div>
+            
+            <div class="quiz-navigation">
+                <button id="next-question" class="btn btn-primary" disabled>
+                    <span>Next Question</span>
+                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L12 6M16 10L12 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results-screen" class="screen">
+            <div class="results-content">
+                <div class="results-header">
+                    <h2>Your AI Proficiency Results</h2>
+                    <div class="score-display">
+                        <div class="score-circle">
+                            <svg viewBox="0 0 200 200">
+                                <circle cx="100" cy="100" r="90" fill="none" stroke="#e0e0e0" stroke-width="12"/>
+                                <circle id="score-progress" cx="100" cy="100" r="90" fill="none" stroke="#4CAF50" stroke-width="12" 
+                                        stroke-dasharray="565.48" stroke-dashoffset="565.48" transform="rotate(-90 100 100)"/>
+                            </svg>
+                            <div class="score-text">
+                                <span id="score-percentage" class="score-number">0%</span>
+                                <span class="score-label">Score</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="results-tier">
+                    <div id="tier-badge" class="tier-badge"></div>
+                    <h3 id="tier-title" class="tier-title"></h3>
+                    <p id="tier-message" class="tier-message"></p>
+                </div>
+                
+                <div class="category-breakdown">
+                    <h4>Performance by Category</h4>
+                    <div id="category-scores" class="category-scores">
+                        <!-- Category scores will be dynamically loaded -->
+                    </div>
+                </div>
+                
+                <div class="recommendations">
+                    <h4>🚀 Your Next Steps</h4>
+                    <div class="recommendation-grid">
+                        <div class="recommendation-section">
+                            <h5>Recommended AI Tools to Explore</h5>
+                            <div id="tool-recommendations" class="tool-list">
+                                <!-- Tools will be dynamically loaded -->
+                            </div>
+                        </div>
+                        <div class="recommendation-section">
+                            <h5>Resources for Deeper Learning</h5>
+                            <div id="resource-recommendations" class="resource-list">
+                                <!-- Resources will be dynamically loaded -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="results-actions">
+                    <button id="share-results" class="btn btn-primary">
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M15 7L10 2L5 7M10 2V14M19 14V16C19 17.1046 18.1046 18 17 18H3C1.89543 18 1 17.1046 1 16V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Share on LinkedIn</span>
+                    </button>
+                    <button id="retake-quiz" class="btn btn-secondary">
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M1 1V7H7M19 19V13H13M19 7C18.1969 4.61553 16.5503 2.69407 14.4246 1.65973C12.2989 0.625386 9.87246 0.557166 7.69751 1.46989C5.52257 2.38262 3.78285 4.20673 2.87311 6.56072C1.96337 8.91472 1.96337 11.5853 2.87311 13.9393M1 13C1.80313 15.3845 3.44968 17.3059 5.57541 18.3403C7.70114 19.3746 10.1275 19.4428 12.3025 18.5301C14.4774 17.6174 16.2172 15.7933 17.1269 13.4393C18.0366 11.0853 18.0366 8.41472 17.1269 6.06072" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Retake Quiz</span>
+                    </button>
+                </div>
+                
+                <div class="certificate-preview">
+                    <p>🏆 Certificate of AI Healthcare Proficiency available for scores above 75%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
